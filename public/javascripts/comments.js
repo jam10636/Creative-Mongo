@@ -28,11 +28,18 @@ $.getJSON('address', function(data) {
       console.log(data);
       var everything = "<ul>";
       for(var comment in data) {
-        com = data[comment];
+        imgurl="";
+	com = data[comment];
+	if(com.Photo=="")
+	{
+       imgurl="http://funny-pics.co/wp-content/uploads/Funny-Alpaca-Face.jpg"
+	}	
+	else
+	{	imgurl=com.Photo};
         everything+='<div class="contact">' +
           '<div>' +
             '<span class="contactTitle">' +
-              '<img src="'+com.Photo+'"/>' +
+              '<img src="'+imgurl+'"/>' +
             '</span>' +
             '<span class="contactTitle">' +
               '<h4>'+
