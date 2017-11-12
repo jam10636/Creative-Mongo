@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Address Book</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js"></script>
+</head>
+
+<body>
+<h1>address book</h1>
+<div class="contacts">
+      <div class="col">
+        <form id="commentForm" action="">
+        <label for="name">Name: </label><input type="text" id="name" placeholder="Name"><br>
+        <label for="address">Address: </label><input type="text" id="address" placeholder="address"><br>
+        <label for="phone">Phone: </label><input type="text" id="phone" placeholder="phone"><br>
+        <label for="email">Email: </label><input type="text" id="email" placeholder="email"><br>
+        <label for="photo">Photo: </label><input type="text" id="photo"  placeholder="URL"><br>
+<button id="postComment" type="button">Add address</button>
+<button id="getComments" type="button">Get address</button>
+<button id="deleteComments" type="button">Delete All</button>
+</form>
+</div>
+<div class="col">
+<div id="comments"></div>
+</div>
+</div>
+</body>
+</html>

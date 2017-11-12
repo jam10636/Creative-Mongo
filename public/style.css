@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script|Hind:300,400');
+
+html {
+  background: #fff;
+  font-family: 'Hind', Helvetica, sans-serif;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  background: #b2dfdb;
+  padding: 20px;
+}
+
+a {
+  color: #009688;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input, button {
+  border: 0px;
+  border-radius:0px;
+  font-family: 'Hind', Helvetica, sans-serif;
+}
+
+input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+input::-webkit-input-placeholder {
+  font-family: 'Hind', Helvetica, sans-serif;
+  color: #00695c;
+}
+
+button {
+  margin: 5px 0px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #fff;
+  color: #f57f17;
+  width: 120px;
+  font-family: 'Oleo Script';
+  font-size: 15px;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+button:focus, button:hover {
+  background: #fff8e1;
+}
+
+h1 {
+  font-family: 'Oleo Script', sans-serif;
+  font-size: 50px;
+  margin-top: 5px;
+  color: #ff8f00;
+  text-shadow:
+  -1px -1px 0 #fff,
+  1px -1px 0 #fff,
+  -1px 1px 0 #fff,
+  1px 1px 0 #fff;
+}
+
+.col {
+  display: inline-flex;
+}
+
+.contactList {
+  list-style: none;
+}
+
+.contactList > li {
+  width: 300px;
+}
+
+.contact {
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+  color: #009688;
+}
+
+.contact > div > span > img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+  object-fit: cover;
+  padding: 2px;
+  border: 1px solid #009688;
+}
+
+.contactTitle {
+  display: inline-flex;
+  font-family: 'Oleo Script', sans-serif;
+  font-size: 25px;
+  color: #00796b;
+  margin-bottom: -70px;
+}
