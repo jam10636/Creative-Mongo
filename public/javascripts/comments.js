@@ -32,8 +32,22 @@ success: function(data,textStatus) {
       var everything = "<ul>";
       for(var comment in data) {
         com = data[comment];
-        everything += "<li> Address: " + com.Address + " -- Name: " + com.Name + "</li>";
-      }
+	everything+='<div class="contact">' +
+          '<div>' +
+            '<span class="contactTitle">' +
+              '<img src="'+com.Photo+'"/>' +
+            '</span>' +
+            '<span class="contactTitle">' +
+              '<h4>'+
+		com.Name+'</h4>' +
+            '</span>' +
+		'</div>' +
+          com.Phone +'<br>'+
+          '<a href="mailto:'+com.Email+'">'+com.Email+'</a><br>' +
+          com.Address+'<br>' +
+          '<input type="checkbox" ng-model="contact.done">'+
+        '</div>'      
+}
       everything += "</ul>";
       $("#comments").html(everything);
     })
