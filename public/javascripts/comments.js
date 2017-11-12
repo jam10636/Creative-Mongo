@@ -25,6 +25,7 @@ contentType: "application/json; charset=utf-8",
 success: function(data,textStatus) {
 }
 });
+});
 $("#getComments").click(function() {
      $.getJSON('address', function(data) {
         console.log(data);
@@ -59,5 +60,4 @@ $("#getComments").click(function() {
         $("#comments").html(everything);
       })
    })
-});
 });
