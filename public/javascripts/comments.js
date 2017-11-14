@@ -109,6 +109,31 @@ success: function(data,textStatus) {
 }
 
 });
+$.getJSON('address', function(data) {
+        console.log(data);
+        var everything = "<ul>";
+        for(var comment in data) {
+          com = data[comment];
+        everything+='<div class="contact">' +
+            '<div>' +
+              '<span class="contactTitle">' +
+                '<img src="'+com.Photo+'"/>' +
+              '</span>' +
+              '<span class="contactTitle">' +
+                '<h4>'+
+                com.Name+'</h4>' +
+              '</span>' +
+                 '</div>' +
+            com.Phone +'<br>'+
+            '<a href="mailto:'+com.Email+'">'+com.Email+'</a><br>' +
+            com.Address+'<br>' +
+        '<input class="checkedbox" type="checkbox" id='+com._id+'>'+
+	'</div>'}
+        everything += "</ul>";
+        $("#comments").html(everything);
+
 });
 });
+});
+$('#delete').DataTable().ajax.reload();
 });

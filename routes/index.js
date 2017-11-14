@@ -52,6 +52,5 @@ Address.findByIdAndRemove(req.body[i], function (err,offer){
 }
 }    // ...
 res.sendStatus(200);
-
 });
 module.exports = router;
