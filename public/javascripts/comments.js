@@ -135,5 +135,4 @@ $.getJSON('address', function(data) {
 });
 });
 });
-$('#delete').DataTable().ajax.reload();
 });
