@@ -19,7 +19,7 @@ $("#done").html(textStatus)}
 var imgurl;	
 if($('#photo').val()=="")
 	{
-imgurl="http://funny-pics.co/wp-content/uploads/Funny-Alpaca-Face.jpg"
+imgurl="http://4.bp.blogspot.com/-MjfbbK6jxqw/UFwZP1v8PXI/AAAAAAAACA4/wdwxdGPs6kA/s1600/n682246214_162323_9474.jpg"
 }
 else
 {
